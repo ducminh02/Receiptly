@@ -11,7 +11,7 @@ The project is built with **Next.js**, **Supabase**, and deployed on **Vercel**.
 * **File Uploads:** Upload receipt images (JPG, PNG) and PDFs.
 * **Data Entry:** Add details for each receipt: merchant, amount, date, and category.
 * **Receipt List:** View all submitted receipts in a clean, filterable list.
-* **Category Filtering:** Filter the receipt list by category (e.g., "Food", "Travel", "Supplies").
+* **Category Filtering:** Filter the receipt list by category (e.g., "Food", "Travel", "Supplies", "Software", "Other").
 * **File Viewing:** Click a receipt to view the original uploaded image or PDF.
 * **Delete:** Remove receipts you no longer need.
 * **Persistence:** All receipt data is saved in a PostgreSQL database and files are stored in a cloud bucket, provided by Supabase.
