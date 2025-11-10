@@ -67,10 +67,6 @@ export const CreateExpenseDialog = ({
       newErrors.category = "Category is required";
     }
 
-    if (!file) {
-      newErrors.file = "File is required";
-    }
-
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
