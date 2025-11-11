@@ -68,7 +68,7 @@ Follow these steps to get the project running locally.
     * For this project, we need the bucket to be public for easy uploading and viewing. Click the `...` on your new bucket and select "**Bucket settings**".
     * Toggle **"Make bucket public"** to **On**.
     * Next, go to the **Policies** tab for your `receipt_imgs` bucket. You need to create policies to allow the app to upload (`INSERT`) and delete (`DELETE`) files.
-    * Click "**New policy**" and create a policy for **uploads** (`INSERT`) and another for **deletions** (`DELETE`). For this simple demo, you can set them to be public (anonymous).
+    * Click "**New policy**" and create a policy for **uploads** (`INSERT`) and another for **deletions** (`DELETE`). For this simple application, you can set them to be public (anonymous).
     * For more detailed instructions, please refer to the [Supabase Storage Policies documentation](https://supabase.com/docs/guides/storage/security/access-control).
 
 ### 2. Local Frontend Setup
