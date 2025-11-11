@@ -56,7 +56,7 @@ Follow these steps to get the project running locally.
         * `amount`: `float8` (set as `NOT NULL`)
         * `date`: `timestamptz` (set as `NOT NULL`)
         * `category`: `text`
-        * `receipt_url`: `text`
+        * `receipt_image_url`: `text`
         * `created_at`: `timestamptz` (set the default value to `now()`)
     * Click **Save** to create the table.
     * (Alternatively, you can use the **SQL Editor** and find table creation guides in the [Supabase documentation](https://supabase.com/docs/guides/database/tables)).
