@@ -34,7 +34,7 @@ Follow these steps to get the project running locally.
 ### Prerequisites
 
 * [Node.js](https://nodejs.org/)
-* [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+* [npm](https://www.npmjs.com/)
 * A [Supabase](https://supabase.com/) account (free tier is sufficient)
 * A [Vercel](https://vercel.com/) account (for deployment)
 
@@ -82,8 +82,6 @@ Follow these steps to get the project running locally.
 2.  **Install Dependencies:**
     ```bash
     npm install
-    # or
-    yarn install
     ```
 
 3.  **Create Environment File:**
@@ -98,8 +96,6 @@ Follow these steps to get the project running locally.
 4.  **Run the Development Server:**
     ```bash
     npm run dev
-    # or
-    yarn dev
     ```
     The application should now be running at `http://localhost:3000`.
 
