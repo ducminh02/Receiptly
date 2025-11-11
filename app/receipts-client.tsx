@@ -18,7 +18,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { Eye, Trash2, Plus } from "lucide-react";
-import { CreatereceiptDialog } from "@/components/AddReceiptDialog";
+import { CreateExpenseDialog } from "@/components/AddReceiptDialog";
 import { ViewReceiptDialog } from "@/components/ViewReceiptDialog";
 import { Receipt, ReceiptData } from "@/types/receipt";
 import { format } from "date-fns";
@@ -228,7 +228,7 @@ export default function ReceiptsClient({ initialReceipts }: ReceiptsClientProps)
         </div>
 
         {/* Dialogs */}
-        <CreatereceiptDialog
+        <CreateExpenseDialog
           open={createDialogOpen}
           onOpenChange={setCreateDialogOpen}
           onSubmit={addReceipt}
