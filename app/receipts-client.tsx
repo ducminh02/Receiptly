@@ -18,7 +18,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { Eye, Trash2, Plus } from "lucide-react";
-import { CreateExpenseDialog } from "@/components/AddReceiptDialog";
+import { CreatereceiptDialog } from "@/components/AddReceiptDialog";
 import { ViewReceiptDialog } from "@/components/ViewReceiptDialog";
 import { Receipt, ReceiptData } from "@/types/receipt";
 import { format } from "date-fns";
@@ -78,7 +78,7 @@ export default function ReceiptsClient({ initialReceipts }: ReceiptsClientProps)
         imageUrl = publicUrl;
       }
 
-      // Step 2: Insert expense data with image URL into database
+      // Step 2: Insert receipt data with image URL into database
       const newReceipt = {
         merchant: receiptData.merchant,
         amount: receiptData.amount,
@@ -94,8 +94,8 @@ export default function ReceiptsClient({ initialReceipts }: ReceiptsClientProps)
         .single();
 
       if (error) {
-        console.error('Error creating expense:', error);
-        toast.error('Failed to create expense');
+        console.error('Error adding receipt:', error);
+        toast.error('Failed to add receipt');
         
         // If database insert fails but file was uploaded, optionally delete the file
         if (imageUrl && receiptData.file) {
@@ -104,11 +104,11 @@ export default function ReceiptsClient({ initialReceipts }: ReceiptsClientProps)
         }
       } else {
         setReceipts([data, ...receipts]);
-        toast.success('Expense created successfully');
+        toast.success('Receipt added successfully');
       }
     } catch (err) {
       console.error('Unexpected error:', err);
-      toast.error('Failed to create expense');
+      toast.error('Failed to add receipt');
     }
   };
 
@@ -134,7 +134,7 @@ export default function ReceiptsClient({ initialReceipts }: ReceiptsClientProps)
       }
     } catch (err) {
       console.error('Unexpected error:', err);
-      toast.error('Failed to delete expense');
+      toast.error('Failed to delete receipt');
     }
   };
 
@@ -228,7 +228,7 @@ export default function ReceiptsClient({ initialReceipts }: ReceiptsClientProps)
         </div>
 
         {/* Dialogs */}
-        <CreateExpenseDialog
+        <CreatereceiptDialog
           open={createDialogOpen}
           onOpenChange={setCreateDialogOpen}
           onSubmit={addReceipt}
