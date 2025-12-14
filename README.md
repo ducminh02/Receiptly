@@ -16,7 +16,7 @@ The project is built with **Next.js**, **Supabase**, and deployed on **Vercel**.
 * **Delete:** Remove receipts you no longer need.
 * **Persistence:** All receipt data is saved in a PostgreSQL database and files are stored in a cloud bucket, provided by Supabase.
 
-## 💻 Tech Stack
+## Tech Stack
 
 * **Frontend:** [Next.js](https://nextjs.org/) (React Framework)
 * **Backend (BaaS):** [Supabase](https://supabase.io/)
@@ -27,7 +27,7 @@ The project is built with **Next.js**, **Supabase**, and deployed on **Vercel**.
 
 ---
 
-## 🚀 Setup and Running Instructions
+## Setup and Running Instructions
 
 Follow these steps to get the project running locally.
 
